@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
+/* making margin and padding 0 for the webpage to remove the default values */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Main Container */
+.container{
+    min-width:500px;
+    max-width:1200px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+/* Taking Input part */
+.input-section{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+.input-section input{
+    width:85%;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}
+.input-section button{
+    width:10%;
+}
+.input-section button {
+    color:#d88771;
+    background-color: rgb(108, 109, 110);
+    cursor:pointer;
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    border:none;
+    
+}
+.input-section button:hover{
+    background-color: rgb(108, 109, 110);
+    color: white;
+}
+/* Dynmaic List styling */
+.todo-container{
+    width: 100%;
+    margin-top:3rem;
+    
+    
+}
+.todo-list{
+    list-style: none;
+    
+}
+.todo{
+    background: beige;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin-bottom:0.5rem;
+    transition: all 1s ease;
+}
+.todo li{
+    flex: 1;
+    margin-right: 1rem;
+}
+/* Complete and Delete button styling */
+.todo button{
+    margin-right: 10px;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline:none;
+    border:none;
+}
+.complete-btn{
+    background:rgb(50, 177, 50);
+    color: white;
+}
+.trash-btn{
+    background-color:rgb(246, 77, 4);
+    color: white;
+}
+.complete-btn:hover{
+    background-color: white;
+    color:rgb(50, 177, 50);
+}
+.trash-btn:hover{
+    background-color: white;
+    color:rgb(246, 77, 4);
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+}
+/* Total task Count Styling */
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
